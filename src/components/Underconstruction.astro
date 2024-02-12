@@ -1,0 +1,116 @@
+---
+import Facebook from '../components/Facebook.astro';
+import Instagram from '../components/Instagram.astro';
+import Twitter from '../components/Twitter.astro';
+import Email from '../components/Email.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Alexágono - Bajo Construcción</title>
+	</head>
+	<style>
+
+@font-face {
+                font-family: "visby" ;
+                src: url("../fonts/VisbyRoundCF-Regular.otf");
+        }
+        @font-face {
+                font-family: "visby-extrabold" ;
+                src: url("../fonts/VisbyRoundCF-ExtraBold.otf");
+        }
+        @font-face {
+                font-family: "visby-light" ;
+                src: url("../fonts/VisbyRoundCF-Light.otf");
+        }
+        @font-face {
+                font-family: "visby-Demibold" ;
+                src: url("../fonts/VisbyRoundCF-DemiBold.otf");
+        }
+
+		h1{
+			color: #FFFFFF;
+			text-align: center;
+			vertical-align: middle;
+			font-family: visby-extrabold;;
+			top: 50%;
+
+		}
+
+		h2{
+			color: #FFFFFF;
+			text-align: center;
+			font-family: visby;
+			vertical-align: middle;
+		}
+
+		h3{
+			color: #FFFFFF;
+			text-align: center;
+			font-family: visby;
+			vertical-align: middle;
+		}
+
+		p{
+			color: #FFFFFF;
+			text-align: center;
+			font-family: visby;
+			vertical-align: middle;
+			
+		}
+
+		body{
+			background: rgb(0,62,146);
+			background: linear-gradient(180deg, rgba(0,62,146,1) 0%, rgba(181,162,223,1) 80%);
+			background-attachment: fixed;
+		}
+
+		#logos{
+			text-align: center;
+		}
+
+		#email-btn{
+			text-align: center;
+			background-color: #381382;
+			border-radius: 50px;
+		}
+
+		#centrar{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 10px;
+		}
+
+	</style>
+
+	<body>
+		<div id="centrar">
+			<div>			
+				<h1>Alexágono Software está...</h1>
+				<h1>bajo construcción</h1>
+				<h2>Estarémos en línea pronto</h2>
+				<h3>Síguenos en nuestras redes sociales</h3>
+			</div>
+			<div id="logos">
+					<Facebook/>
+					<Instagram/>
+					<Twitter/>
+					<a href="mailto:manuel.barraza@alexagono.com">
+							<Email/>
+					</a>
+			</div>
+	
+	
+			<div>
+				<p>©2024 Alexágono Software</p>
+				<p>Todos los derechos reservados.</p>
+			</div>
+		</div>
+	</body>
+</html>
